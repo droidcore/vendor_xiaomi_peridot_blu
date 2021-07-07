@@ -1701,7 +1701,6 @@ PRODUCT_PACKAGES += \
     libdlbvol \
     libhwdap \
     libquasar \
-    libshoebox \
     libspatializer \
     libswgamedap \
     libswspatializer \
