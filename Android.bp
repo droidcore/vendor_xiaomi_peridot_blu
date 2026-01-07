@@ -46,7 +46,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.security.keymintperidot",
+    name: "android.hardware.security.keymint-V3-ndk-bp4a",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -54,7 +54,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.security.keymintperidot.so",
+                "proprietary/vendor/lib64/android.hardware.security.keymint-V3-ndk-bp4a",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -2772,7 +2772,7 @@ cc_prebuilt_library_shared {
                 "libEGL",
                 "libGLESv2",
                 "libGLESv3",
-                "libtensorflowlite_c",
+                "libtensorflowlite_c_vendor",
                 "libm",
                 "libc",
             ],
@@ -3728,7 +3728,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libVoiceSdk",
-                "libtensorflowlite_c",
+                "libtensorflowlite_c_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -4999,7 +4999,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libbinder",
                 "libdrm",
-                "libtinyxml2",
+                "libtinyxml2_bp4a",
                 "libdisplaydebug",
                 "libhidlbase",
                 "android.frameworks.sensorservice@1.0",
@@ -6412,7 +6412,7 @@ cc_prebuilt_library_shared {
                 "libjc_keymint_transport_nxp",
                 "libbinder_ndk",
                 "libmemunreachable",
-                "android.hardware.security.keymintperidot",
+                "android.hardware.security.keymint-V3-ndk-bp4a",
                 "libc++",
                 "libc",
                 "libm",
@@ -6708,7 +6708,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libVoiceSdk",
-                "libtensorflowlite_c",
+                "libtensorflowlite_c_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -12965,7 +12965,7 @@ cc_prebuilt_library_shared {
                 "libdisplaydebug",
                 "libsdm-color",
                 "libbinder",
-                "libtinyxml2",
+                "libtinyxml2_bp4a",
                 "libsdmutils",
                 "libdrm",
                 "libdigital-dimming",
@@ -13678,7 +13678,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libtensorflowlite_c",
+    name: "libtensorflowlite_c_vendor",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -13686,7 +13686,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libtensorflowlite_c.so",
+                "proprietary/vendor/lib64/libtensorflowlite_c_vendor.so",
             ],
             shared_libs: [
                 "libm",
@@ -13814,6 +13814,31 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libtinyxml2_1.so",
             ],
             shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtinyxml2_bp4a",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtinyxml2_bp4a.so",
+            ],
+            shared_libs: [
+                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -22999,7 +23024,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full",
+                "libprotobuf-cpp-21.7",
                 "libcutils",
                 "liblog",
                 "libhidlbase",
@@ -40339,7 +40364,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.security.keymintperidot",
+                "android.hardware.security.keymint-V3-ndk-bp4a",
                 "libc++",
                 "libc",
                 "libm",
