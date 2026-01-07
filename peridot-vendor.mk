@@ -1111,7 +1111,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
-    android.hardware.security.keymintperidot \
+    android.hardware.security.keymint-V3-ndk-bp4a \
     btaudio_offload_if \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.imscmservice@1.0 \
@@ -1561,12 +1561,13 @@ PRODUCT_PACKAGES += \
     libsys_info_cache \
     libsystem_health_mon \
     libtaautoload \
-    libtensorflowlite_c \
+    libtensorflowlite_c_vendor \
     libtestutils \
     libthermalclient \
     libthreadutils \
     libtime_genoff \
     libtinyxml2_1 \
+    libtinyxml2_bp4a \
     libtlpd \
     libtlpd_configmgr \
     libtlpd_crypto \
