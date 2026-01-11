@@ -12965,7 +12965,7 @@ cc_prebuilt_library_shared {
                 "libdisplaydebug",
                 "libsdm-color",
                 "libbinder",
-                "libtinyxml2_bp4a",
+                "libtinyxml2-v34",
                 "libsdmutils",
                 "libdrm",
                 "libdigital-dimming",
@@ -13827,7 +13827,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libtinyxml2_bp4a",
+    name: "libtinyxml2_v34",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -13835,7 +13835,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libtinyxml2_bp4a.so",
+                "proprietary/vendor/lib64/libtinyxml2_v34.so",
             ],
             shared_libs: [
                 "liblog",
